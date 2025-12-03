@@ -2,9 +2,9 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level = logging.INFO, format = '[%(asctime)s]: %(message)s:')
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "DataScience-Pipeline-X-MLFlow-Dagshub"
+project_name="datascience"
 
 list_of_files=[
     ".gthub/workflows/.gitkeep",
@@ -32,8 +32,8 @@ list_of_files=[
 
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
-    filedir,filename = os.path.split(filepath)
+    filepath=Path(filepath)
+    filedir,filename=os.path.split(filepath)
 
     if filedir!="":
         os.makedirs(filedir,exist_ok=True)
