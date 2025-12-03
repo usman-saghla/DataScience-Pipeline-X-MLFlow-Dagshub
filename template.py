@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level = logging.INFO, format = '[%(asctime)s]: %(message)s:')
 
-project_name = "DataScience-Pipeline-X-MLFlow-Dagshub"
+project_name = "DataSciencePipeline"
 
 list_of_files=[
     ".gthub/workflows/.gitkeep",
